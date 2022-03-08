@@ -1,0 +1,229 @@
+/* Basic CSS reset */
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+   
+}
+
+
+body{
+    background-image: url('../billeder/baggrund2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Irish Grover', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Source Serif 4', sans-serif;
+
+    
+}
+    
+
+
+
+html {
+    font-size: 100%;
+}
+
+/* You start your css below */
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5px;
+    
+    font-size: 0.9rem;
+}
+
+.hoved_sektion {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.sidehoved {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+
+.login_symbol {
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: .8rem;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.billed_sektion {
+    background-image: url('../billeder/test2.jpg');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.685); 
+    border-radius: .8rem;
+}
+
+.formular {
+    position: relative;
+    top: 80px;
+    width: 400px;
+    height: 245px;
+    background: rgb(80,79,79);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.6867121848739496) 0%, rgba(140,137,137,0.7567401960784313) 47%, rgba(24,24,24,0.6923144257703081) 100%);
+    padding: 15px;
+    margin-left: 120px;
+    font-family: 'Itim', cursive;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.685); 
+    border-radius: .8rem;
+}
+
+.formular_overskrift {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.formular_felter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: .8rem;
+}
+
+#afhent, #aflever {
+    width: 9.5rem;
+    text-align: right;
+    padding: 5px;
+    border-radius: .8rem;
+}
+#personer{
+    width: 3rem;
+    text-align: right;
+    padding: 5px;
+    border-radius: .8rem;
+}
+
+
+
+#kufferter {
+    width: 9.5rem;
+    padding: 5px;
+    border-radius: .8rem;
+}
+
+.etiket {
+    margin: 15px 0 5px;
+    display: block;
+    color: white;
+    border-radius: .8rem;
+}
+
+.formular_knap {
+    text-align: center;
+    margin-top: 25px;
+    border-radius: .8rem;
+}
+
+.knap {
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 5px 40px;
+    border-radius: .8rem;
+}
+
+.bil_sektion {
+    padding: 50px 0;
+    max-width: 100%;
+    margin: 0 auto;
+ 
+}
+
+.bil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #9b9898a1 0%, #b1abab 100%);
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.678);
+  border-radius: .8rem;
+  
+   
+}
+
+.bilMM {
+    font-size: 1.5rem;
+    width: 13rem;
+}
+
+.bildetaljer {
+    width: 13rem;
+}
+
+.prisogbook {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 6rem;
+}
+
+.lejeudgift {
+    font-size: 1.5rem;
+}
+
+.booknu_knap {
+    display: inline-block;
+  padding: 0.5rem 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: white;
+  background-image: linear-gradient(to right, #353434 0%, #000000 100%);
+  border-radius: .8rem;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .formular {
+        margin: 0 auto;
+    }
+    .bil {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 500px;
+        align-items: center;
+    }
+    .bilMM, .bildetaljer {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .billed_sektion {
+        height: 475px;
+    }
+    .formular {
+        width: 310px;
+        height: 200px;
+    }
+}

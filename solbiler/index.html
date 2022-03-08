@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lej en bil | Solbiler ApS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Montserrat:ital,wght@0,100;0,400;0,600;1,900&family=Poppins:ital,wght@0,100;0,200;1,300;1,600&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/minstil.css">
+</head>
+
+<body class="wrapper">
+
+    <section class="hoved_sektion">
+        <div class="sidehoved">
+            <h2>Solbiler ApS</h2>
+            <div class="login_symbol">Log ind</div>
+        </div>
+    </section>
+
+
+    <section class="billed_sektion">
+        
+        <form class="formular" action="#" onsubmit="return false;">
+            <h1 class="formular_overskrift">Find bilen som passer dig</h1> 
+            
+
+            <div class="formular_felter">
+                
+                <div>
+                    <label for="afhentning" class="etiket">Jeg henter den</label>
+                    <input type="date" id="afhent">
+                </div>
+
+                <div>
+                    <label for="aflevering" class="etiket">Jeg afleverer den</label>
+                    <input type="date" id="aflever">
+                </div>
+
+                <div>
+                    <label for="personer" class="etiket">Antal personer</label>
+                   <select name="personer" id="personer">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+
+                   </select>
+                </div>
+
+                <div>
+                    <label for="kufferter" class="etiket">Antal kufferter</label>
+                     <select name="kufferter" id="kufferter">
+                        <option value="0">0 - kun taske</option>
+                        <option value="1">1 kuffert</option>
+                        <option value="2">2 kufferter</option>
+                        <option value="3">3 kufferter</option>
+                        <option value="4">4 kufferter</option>
+                    </select>
+                </div>
+                
+            </div>
+
+            <div class="formular_knap">
+                <button onclick="search();" class="knap" type="submit">Søg</button>
+            </div>
+           
+        </form>
+    </section>
+
+    <section class="bil_sektion" id="bil_sektion"></section>
+
+    <template id="skabelon_output">
+        <div class="bil">
+            <img>
+            <div class="bilMM"></div>
+            <div class="bildetaljer">
+                <div class="kategori">Kategori: </div>
+                <div class="antalpersoner">Personer: </div>
+                <div class="antalkufferter">Kufferter: </div>
+            </div>
+            <div class="prisogbook"> 
+                <div class="lejeudgift">DKK </div>
+                <a href="#" class="booknu_knap">Book nu</a>
+            </div>
+        </div>
+    </template>
+
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
+
