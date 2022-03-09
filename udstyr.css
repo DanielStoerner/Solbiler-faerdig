@@ -1,0 +1,117 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* You start your css below */
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.login_sektion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.login_symbol {
+    margin-right: 5px;
+}
+
+.billed_sektion {
+    background-image: url('../billeder/car-1318724_1280.jpg');
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hovedindhold {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lejeoplysninger {
+    background-color: rgb(244, 210, 96);
+    width: 300px;
+    padding: 25px;
+    border: 1px solid lightgray;
+}
+
+.udstyrssektion {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    padding: 20px
+}
+
+.formular {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+label {
+    border: 1px solid lightgray;
+    display: block;
+    text-align: right;
+    margin: 10px 5px 0 0;
+    padding: 10px;
+}
+
+
+label:nth-child(2n) {
+    background-color: rgba(244, 204, 96, 0.26);
+}
+
+.checkboks {
+    margin-left: 10px;
+}
+
+.flexsektion {
+    width: 275px;
+    margin: 25px;
+}
+
+.videreknap {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 8rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.totaldkk {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.totalindhold {
+    padding: 10px;
+    border: 1px solid red;
+}

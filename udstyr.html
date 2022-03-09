@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valg af udstyr | Solbiler ApS</title>
+    <link rel="stylesheet" href="udstyr.css">
+</head>
+
+<body class="wrapper">
+    <div class="login_sektion"><img src="billeder/person-black-18dp.svg" alt="Person symbol" class="login_symbol">Log ind</div>
+    <div class="billed_sektion"></div>
+    <div class="hovedindhold">
+        <aside id="lejeoplysninger" class="lejeoplysninger">
+            <h2>Godt valg!</h2>
+        </aside>
+        <section class="udstyrssektion">
+            <h1>Vælg ekstraudstyr (ekskl. moms)</h1>
+            <form class="formular" id="formular" action="kunde.html">
+                <div class="flexsektion">
+                    <label>Ekstra chauffør kr. 199,00<input type="checkbox" data-udstyr="Ekstra chauffør" class="checkboks" value="199.00"></label>
+                    <label>Barnesæde (5-12 år) kr. 155,00<input type="checkbox" data-udstyr="Barnesæde (5-12 år)" class="checkboks" value="155.00"></label>
+                    <label>Vejhjælp+ kr. 120,00<input type="checkbox" class="checkboks" data-udstyr="Vejhjælp+" value="120.00"></label>
+                    <label>Lift-net (0-1 år) kr. 100,00<input type="checkbox" class="checkboks" data-udstyr="Lift-net (0-1 år)" value="100.00"></label>
+                </div>
+                <div class="flexsektion">
+                    <label>Barnesæde (1-4 år) kr. 140,00<input type="checkbox" data-udstyr="Barnesæde (1-4 år)" class="checkboks" value="140.00"></label>
+                    <label>GPS navigation kr. 250,00<input type="checkbox" data-udstyr="GPS navigation" class="checkboks" value="250.00"></label>
+                    <label>Snekæder kr. 188,00<input type="checkbox" data-udstyr="Snekæder" class="checkboks" value="188.00"></label>
+                </div>
+                  <button class="videreknap">Videre -&gt</button>
+            </form>
+        </section>
+        <aside id="totaldkk" class="totaldkk">
+            <div id="totalindhold" class="totalindhold">ALT INKLUSIV:</div>
+        </aside>
+    </div>
+    <script src="js/udstyr.js"></script>
+</body></html>
+
